@@ -26,6 +26,9 @@ for area in bpy.context.screen.areas:
 #OUTPUT = "C:/Users/Administrator/Pictures"   # Where to save Images
 OUTPUT = os.path.join(os.path.expanduser('~'), 'Pictures')   # 自动保存到我的图片
 
+#读取当前相机名称
+cameraname = bpy.context.scene.camera.name
+
 #for i in list:
 #bpy.context.scene.frame_set(int(i)) #jump to frame
 timenow = time.strftime("%Y%m%d %H%M%S", time.localtime()) #add timemark
