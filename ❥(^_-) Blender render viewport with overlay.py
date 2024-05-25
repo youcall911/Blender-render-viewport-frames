@@ -39,7 +39,7 @@ cameraname = bpy.context.scene.camera.name
 timenow = time.strftime("%Y%m%d %H%M%S", time.localtime()) 
 #日期
 
-filepath = OUTPUT + "/" + str(timenow) + ' ' + str(cameraname) + ' ' + str(filename)
+filepath = OUTPUT + "/" + str(filename) + ' ' + str(timenow) + ' ' + str(cameraname)
 #生成路径
 
 bpy.context.scene.render.filepath = filepath
